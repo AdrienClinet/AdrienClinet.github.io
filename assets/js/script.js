@@ -155,7 +155,7 @@ const changePage = function (targetPage) {
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    changePage(this.dataset.navLink);
+    changePage(navigationLinks[i].textContent.trim());
 
     // close sidebar on mobile when clicking on a nav link
     if (window.innerWidth <= 768) {
