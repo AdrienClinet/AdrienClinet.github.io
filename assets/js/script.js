@@ -146,7 +146,7 @@ form.addEventListener("submit", function(event) {
   };
 
   // Send email using EmailJS
-  emailjs.send("your_service_id", "your_template_id", formData)
+  emailjs.send("service_x37e7jl", "template_hnvrqif", formData)
     .then(function(response) {
       console.log('Success!', response.status, response.text);
       // Show a success message or reset the form
